@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirbUp</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <form id ='sendtext' method="post">
+            <input id ='query' placeholder="Search bird" type="text">
+            <input id = 'button-ok' type="submit" value="Find">
+        </form>
+        <h2 id="appname">BirbUp</h2>
+    </div>
+
+    <div class="info">
+        
+        <div class="left">
+            <div class="birds-list-header">
+                <p class="birds-list-header">Birds Observations</p>
+            </div>
+            <div id="birdslist">
+                
+            </div>
+        </div>
+    
+        <div class="center">
+    
+            <div id="img-box">
+                <img id="bird-image"></img>
+            </div>
+            <div id="previous">Previous</div>
+            <div id="next">Next</div>
+            <div id="bird-info">
+                <p id="scientific"></p>
+                <p id="common"></p>
+                <a href=""id="wiki" target="_blank"></a>
+            </div>
+            <audio id="audioPlayer"></audio>
+        </div>
+    
+        <div class="right">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a id= "github" href="https://github.com/Fabio-CDias/BirbUp" target="_blank">Github Project</a>
+    </div>
+
+    <script src="script.js"></script>
+    
+    </body>
+</html>

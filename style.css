@@ -1,0 +1,282 @@
+body{
+
+    background: linear-gradient(to right, #70B879, #BCD8E3);
+    margin:0;
+    padding:0;
+
+    height:100%;
+    width: 100%;
+    
+}
+.header{
+    margin:0;
+    padding:0;
+    top:0;
+
+    position:relative;
+    display: flex;
+    background-color:#1c2f35;
+
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#appname{
+    
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    
+}
+#sendtext{
+    display: flex;
+
+    margin:0;
+    padding:0;
+}
+#query{
+    display:flex;
+    padding:5px;
+    width:20vw;
+    border-color:rgb(175, 255, 128);
+    border-style:none;
+    border-radius: 5px;
+    background:rgb(205, 255, 175);
+    border-width:0;
+    font-size:large;
+    color:rgb(5, 80, 5);
+    font-weight: bolder;
+}
+#query:focus{
+    outline-color: rgb(200,255,0);
+    outline-style:groove;
+}
+#button-ok{
+    margin-left:15px;
+    text-align:center;
+    padding: 5px 15px;
+    border-radius: 100px;
+    background-color:#70B879;
+    color:black;
+    font-weight: bold;
+    outline:none;
+    border-style: none;
+}
+
+#button-ok:hover{
+    color:white;
+    background-color: #2a912a;
+}
+
+.birds-list-header{
+    color:rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size:larger;
+}
+.info{
+    margin:0;
+    padding:0;
+
+    position:relative;
+
+    height:90vh;
+    width: 100vw;
+
+}
+.left{
+    margin:0;
+    padding:0;
+    top:0;
+    left:0;
+
+    position:absolute;
+
+    background-color:#538b9c3a;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    height:90vh;
+    width:30vw;
+    overflow-y: auto;
+}
+
+#specie-line{
+    font-size:large;
+    display:flex;
+    align-items:center;
+    padding-right:1px;
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content:end;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: #538B9C;
+}
+#square-img{
+    width:8vw;
+
+}
+.center{
+    margin:0;
+    padding:0;
+    top:0;
+    left:30%;
+    right:30%;
+    
+    position:absolute;
+
+    background-color: #538b9c00;
+    color: rgb(0, 0, 0);
+    height:90vh;
+    width:30vw;
+}
+#bird-info{
+    font-size:medium;
+    font-weight:bold;
+}
+
+.right{
+    margin:0;
+    padding:0;
+    top:0;
+    right:0;
+    position:absolute;
+    height:90vh;
+    width:40vw;
+}
+#map{
+    position:relative;
+    top:0;
+    width:100%;
+    height:100%;
+    /* opacity: 0.8; */
+}
+
+
+.footer{
+    width:100vw;
+    height: 5vh;
+    display:flex;
+    background-color:#1c2f35;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#github:link, #github:visited {
+    color: rgb(255, 255, 255); 
+    font-size:medium
+    text-decoration:none;
+    cursor:pointer;
+    pointer-events:all;
+}
+
+#img-box{
+    position: relative;
+    max-width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#bird-image{
+    max-width: 100%;
+    max-height: 100%;
+    width:100%;
+    height:auto;
+    object-fit: cover;
+
+}
+
+#previous,#next {
+    display: flex;
+    float:right;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:#70B879;
+    border-radius: 100px;
+    width: 50%;
+    height: 5%;
+}
+#previous:hover, #next:hover{
+    background-color: #2a912a;
+}
+
+#audioPlayer{
+    width:100%;
+    background-color: #70B879;
+}
+
+h2{
+    margin:0;
+    padding:0;
+    color:white;
+    width:100%;
+    height:100%;
+}
+@media (max-width: 1000px) {
+
+    .right{
+        position:static;
+        width:100%;
+        height:40vh;
+    }
+    .center{
+        left:40%;
+        width:60vw;
+        height:50vh;
+    }
+    .left{
+        position:static;
+        width:40vw;
+        height:50vh;
+    }
+    #img-box{
+        height:30vh;
+        display:contents;
+    }  
+    #bird-image{
+        height:30vh;
+    }
+}
+@media (max-width:600px){
+    .right{
+        position:absolute;
+        width:100vw;
+        height:25vh;
+        top:65vh;
+       
+    }
+    .center{
+        position:static;
+        left:40%;
+        width:100vw;
+        height:40vh;
+        overflow-y: auto;
+    }
+    .left{
+        position:static;
+        width:100vw;
+        height:20vh;
+    }
+    #img-box{
+        height:30vh;
+        display:contents;
+    }  
+    #bird-image{
+        height:30vh;
+    }
+}
